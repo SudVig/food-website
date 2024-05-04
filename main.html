@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            
+        }
+        body{
+           overflow: hidden;
+        }
+.bg{
+    background-image: linear-gradient(to bottom right,rgb(255, 1, 230),rgb(121, 3, 255));
+    width: 100%;
+    height:100vh;
+
+}
+
+table{
+    position: absolute;
+    margin: 10px;
+    z-index: 1;
+}
+td{
+    padding:20px;
+    color:white;
+    font-size: 20px;
+   
+}
+.background{
+   
+    position:absolute;
+    opacity:0.6;
+    width: 100%;
+    height:100vh;
+    
+}
+h1{
+    color:white;
+}
+.cont{
+    position: absolute;
+    top:37%;
+    left:37%;
+    text-align: center;
+   
+}
+
+.cont h1{
+
+    font-size: 90px;
+    font-family: Tahoma;
+}
+hr{
+    background-color:white;
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 1px;
+    border:none;
+}
+.cont p{
+    color:white;
+    font-size: 30px;
+    font-family: Tahoma;
+}
+
+.cont button{
+    color:white;
+    border:white solid 2px;
+    background: none;
+    
+    font-size: 25px;
+    font-family: Tahoma;
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    
+}
+.cont button:hover{
+    color:black;
+    background-color: white;
+    
+    
+
+}
+.contact{
+
+    position: absolute;
+    bottom:0%;
+    width:100%;
+
+}
+.user{
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:30px;
+    right:30px;
+    z-index:2;
+}
+.user:hover{
+    opacity:0.5;
+}
+.contactimg{
+    height:20px;
+    width:20px;
+    margin-bottom:0px;
+    margin-left:5px;
+
+}
+.contact p{
+    color:white;
+    font-size: 20px;
+    margin-bottom:10px;
+    margin-left:5px;
+}
+.bg a{
+    text-decoration: none;
+    color:white
+}
+.bg a:hover{
+    opacity:0.5;
+    
+}
+.cont1{
+
+    position: absolute;
+    top:10%;
+    
+    height:100%;
+    width:100%;
+    display:none;
+    
+    
+    
+}
+.cont2{
+
+position: absolute;
+top:30%;
+left:38%;
+height:100%;
+width:100%;
+
+display:none;
+
+}
+.cont2 form{
+    height:250px;
+    width:270px;
+    padding:50px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius:15px;
+   
+    
+}
+.cont2 input[type="submit"]{
+
+    font-size: 18px;
+    border: none;
+    background-image: linear-gradient(to bottom right,rgb(255, 1, 230),rgb(121, 3, 255));
+    color:white;
+    font-weight:bold;
+    width:150px;
+    height: 40px;
+    border-radius: 20px;
+  
+  margin-left:25%;
+}
+.cont2 input[type="submit"]:hover{
+    opacity: 0.8;
+    
+
+}
+
+.cont2 h1{
+    margin-left:20%;
+}
+.cont2 p{
+
+    color: black;
+    margin-left:17%;
+    font-size: 20px;
+
+}
+.cont2 input[type="text"]{
+    width: 240px;
+    height: 140px;
+    background-color: rgba(255,255,255,0);
+    text-align: center;
+    outline: none;
+    border-radius: 20px;
+    border-color: black solid 1px;
+    margin-left:5%;
+
+
+}
+
+.cont3{
+
+position: absolute;
+top:20%;
+left:30%;
+
+height:100%;
+width:100%;
+display:none;
+
+
+}
+.abt{
+    border-radius: 20px;    
+    margin:50px;
+    padding:20px;
+    width:400px;
+    background-color:rgba(255,255,255,1);
+}
+.abt p{
+    text-align: justify;
+}
+
+
+.abt h1{
+
+    color:black;
+    font-family:tahoma;
+
+}
+.abt h2{
+    text-align: center;
+}
+.container{
+
+    height: 250px;
+    width:200px;
+    background-color: white;
+    border-radius: 10px;
+    
+    
+}
+.container img{
+    height: 155px;
+    width:155px;
+    border-radius: 10px;
+}
+.container img:hover{
+    opacity:0.9;
+}
+.container p{
+    color:black;
+    font-family: tahoma;
+    font-weight: bold;
+    position: relative;
+    top:6%;
+    left:12%;
+    
+}
+.container button{
+    position: relative;
+    top:6%;
+    left:12%;
+    width:100px;
+    margin-top:10px;
+    font-family: tahoma;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: black solid 2px;
+    background-color: rgba(255,255,255,0);
+}
+.container button:hover{
+
+    color:white;
+    background-color: black;
+    transition:0.2s;
+}
+.food{
+
+    position: relative;
+    top:6%;
+    left:12%;
+
+}
+.cont1 h1{
+    margin-top:30px;
+    margin-left:30px;
+}
+.cont2 h1{
+    color:black;
+
+}
+.abt hr{
+    background-color:black;
+    border:none;
+    width: 400px;
+    margin-top:40px;
+}
+.abt img{
+
+    height: 100px;
+    width:100px;
+    margin-left: 150px;
+}
+.cont3 hr{
+
+width:100%;
+border: none;
+background-color: color;
+
+
+
+}
+    </style>
+
+
+<script>
+    
+
+
+function show(x)
+{if(x=='cont'){
+    document.getElementById('cont').style.display="block";
+    document.getElementById('cont1').style.display="none";
+    document.getElementById('cont2').style.display="none";
+    document.getElementById('cont3').style.display="none";
+}
+else if(x=='cont1'){
+document.getElementById('cont1').style.display="block";
+    document.getElementById('cont').style.display="none";
+    document.getElementById('cont2').style.display="none";
+    document.getElementById('cont3').style.display="none";
+    document.getElementById('contact').style.display="none";
+}
+else if(x=='cont2'){
+document.getElementById('cont2').style.display="block";
+    document.getElementById('cont').style.display="none";
+    document.getElementById('cont1').style.display="none";
+    document.getElementById('cont3').style.display="none";
+}
+else if(x=='cont3'){
+document.getElementById('cont3').style.display="block";
+    document.getElementById('cont').style.display="none";
+    document.getElementById('cont1').style.display="none";
+    document.getElementById('cont2').style.display="none";
+}
+
+
+
+}
+
+
+
+</script>
+</head>
+<body>
+  
+<div class="bg">
+    
+
+
+<table>
+<td><a href="#" onclick="javascript:show('cont')">Home</a></td>
+<td><a href="#" onclick="javascript:show('cont1')">Order</a></td>
+<td><a href="#" onclick="javascript:show('cont2')">Feedback</a></td>
+<td><a href="#" onclick="javascript:show('cont3')">About Us</a></td>
+
+
+</table>
+<a href="login.html"><img src="img/user.png" alt="" class="user"></a>
+
+<hr>
+<img src="img/bg.jpg" alt="" class="background">
+    
+
+</div>
+<div class="cont" id="cont">
+            <h1>Hungry?</h1>
+            <p>
+        Order Your Favourite Food!
+            </p><br>
+            <button onclick="javascript:show('cont1')">Now</button>
+ </div>
+<div class="cont1" id="cont1" >
+
+
+
+    <h1>Today's Special</h1>
+<table>
+    <tr>
+<td>
+
+    <div class="container">
+        <div class="food">
+    <img src="img/frenchfries.jpg" alt="">
+    <br>
+    <p>frenchfries</p>
+    <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.75</button></td>
+
+    <td>
+
+        <div class="container">
+            <div class="food">
+        <img src="img/cutlet.jpg" alt="">
+        <br>
+        <p>&nbsp&nbsp&nbspCutlet</p>
+        <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.50</button></td>
+        <td>
+            
+            <div class="container">
+                
+                <div class="food">
+            <img src="img/IMG_20220608_223614.jpg" alt="">
+            <br>
+            <p>GulabJamun</p>
+            <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.90</button></td>
+            <td>
+
+                <td>
+            
+                    <div class="container">
+                        
+                        <div class="food">
+                    <img src="img/ICECREAM CUPCAKE.jpg" alt="">
+                    <br>
+                    <p>Cup Cake</p>
+                    <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.65</button></td>
+                    <td>
+
+                        <td>
+            
+                            <div class="container">
+                                
+                                <div class="food">
+                            <img src="img/IMG_20220608_223658.jpg" alt="">
+                            <br>
+                            <p>&nbsp&nbsp&nbsp&nbsppasta</p>
+                            <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.70</button></td>
+                            <td>
+                                
+
+                <div class="container">
+                    <div class="food">
+                <img src="img/IMG_20220609_065821.jpg" alt="">
+                <br>
+                <p>Biriyani</p>
+                <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.100</button>
+
+      
+
+
+
+            </div>
+        </td>
+
+    </tr>
+
+
+
+    <tr>
+        <td>
+        
+            <div class="container">
+                <div class="food">
+            <img src="img/IMG_20220609_065833.jpg" alt="">
+            <br>
+            <p>MilkShake</p>
+            <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.98</button></td>
+        
+            <td>
+        
+                <div class="container">
+                    <div class="food">
+                <img src="img/IMG_20220609_070122.jpg" alt="">
+                <br>
+                <p>&nbsp&nbsp&nbsp&nbspPoori</p>
+                <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.60</button></td>
+                <td>
+                    
+                    <div class="container">
+                        
+                        <div class="food">
+                    <img src="img/20220609_195456.jpg" alt="">
+                    <br>
+                    <p>&nbspRoseMilk</p>
+                    <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.50</button></td>
+                    <td>
+        
+                        <td>
+                    
+                            <div class="container">
+                                
+                                <div class="food">
+                            <img src="img/20220609_200415.jpg" alt="">
+                            <br>
+                            <p>&nbsp&nbsp&nbsp&nbspPuffs</p>
+                            <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.65</button></td>
+                            <td>
+        
+                                <td>
+                    
+                                    <div class="container">
+                                        
+                                        <div class="food">
+                                    <img src="img/20220609_200344.jpg" alt="">
+                                    <br>
+                                    <p>&nbsp&nbsp&nbspNoodles</p>
+                                    <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.100</button></td>
+                                    <td>
+                                        
+        
+                        <div class="container">
+                            <div class="food">
+                        <img src="img/20220609_200928.jpg" alt="">
+                        <br>
+                        <p>Ice Cream</p>
+                        <button onclick="alert('Your Order Has been Placed Sucessfully')">Rs.120</button>
+        
+              
+        
+        
+        
+                    </div>
+                </td>
+        
+            
+    </table>
+        
+    </div>
+<div class="cont2" id="cont2">
+
+<form action="">
+    <h1>Feedback</h1><br>
+<p>Enter Your Feedback</p>
+<input type="text" name = "content" placeholder = "Feedback here!" required= "" autocomplete="off" maxlength="50"><br><br>
+<input type="submit">
+
+
+
+
+</form>
+    
+</div>
+
+<div class="cont3" id="cont3">
+<div class="abt">
+    <h1>About Us</h1><br>
+    <hr>
+    <img src="img/user1.png" alt="">
+    <h2>Who We Are?</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Quas maiores reprehenderit aperiam incidunt omnis atque asperiores
+        facilis blanditiis soluta nisi esse voluptates totam doloremque error, 
+        veniam at mollitia? Explicabo aliquid excepturi quod, neque magnam 
+        animi. Adipisci iste incidunt minima enim mollitia natus, nemo aliquam 
+        undenesciunt necessitatibus doloribus placeat ducimus!</p></div>
+        
+    </div>
+
+
+
+
+    
+</div>
+<div class="contact" id="contact">
+    <p><img src="img/contact.png" alt="" class="contactimg">&nbsp  +91 8678911680&nbsp&nbsp
+    <img src="img/mail.png" alt="" class="contactimg">  &nbsprsudalaivignesh@gmail.com</p>
+</div>
+</body>
+</html>

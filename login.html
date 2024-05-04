@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Life</title>
+    <style>
+*{
+    margin:0px;
+    padding: 0%;
+}
+body{
+    background-image:url("img/signupbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    
+}
+.box{
+
+padding: 40px;
+background-color: white;
+margin-top: 1%;
+margin-left:10%;
+border-radius: 20px;
+box-shadow: 10px 7px 7px rgba(0,0,0,0.2);
+
+width:250px
+
+
+}
+p{
+
+    font-weight: bold;
+    font-family: tahoma;
+}
+h1{
+    text-align: center;
+}
+
+form{
+
+    margin-left: 50px;
+}
+input{
+
+    border:0px;
+    outline:none;
+    font-size:16px;
+    border-color: rgba(0,0,0,0.3);
+border-width: 1px ;
+border-top: 0px;
+border-left:0px;
+border-right:0px;
+}
+input[type="submit"]
+{
+
+    padding-left:10px;
+padding-right:10px;
+border:white solid 2px;
+border-color: black;
+outline:none;
+height:40px;
+width:100px;
+color:black;
+font-size:18px;
+background-color: white;
+border-radius: 20px;
+margin-left:20px;
+font-weight:bold;
+    
+    
+}
+input[type="submit"]:hover{
+
+    color:white;
+    background-color:black;
+
+    transition: 0.2s;
+}
+
+a:hover{
+    color:red;
+    transition:o.2s;
+}
+
+a{
+    text-decoration: none;
+    color:blue;
+    margin-left:3px;
+}
+
+
+
+
+   
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    <div class="cont">
+        <h1>Login</h1><br><br>
+        <form name="form1" method="POST" action="main.html">
+        <p> User Name</p><br>
+        <input type ="text" name = "name" placeholder = "Enter user name" required= " " autocomplete="off" maxlength="20">
+        
+        <br><br>
+
+        <p> Password</p><br>
+        <input type ="password" name = "pass" placeholder = "Enter the password" required= " " autocomplete="off" maxlength="20">
+        <br><br>
+
+        
+        <input type ="submit" value ="Login">
+        <br><br>
+        
+        <a href="index.html"> New user, signup!</a>
+        </form>
+        </div><div>
+    </div>
+    
+</body>
+</html>
