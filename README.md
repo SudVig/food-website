@@ -20,7 +20,8 @@ The goal of this project is to create an attractive and user-friendly interface 
 
 ## Screenshot
 
-![Screenshot (66)](https://github.com/SudVig/food-website/assets/96943194/8eefc499-6b43-4fd3-8439-6f974757f833)
+![Screenshot (66)](https://github.com/SudVig/food-website/assets/96943194/fb19ac48-ed18-4796-a5c3-8d0541a532a6)
+
 
 
 
